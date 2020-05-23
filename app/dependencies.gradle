@@ -1,0 +1,45 @@
+ext {
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+        //Kotlin
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+        //Android
+        implementation "androidx.appcompat:appcompat:$appcompat_version"
+        implementation "com.google.android.material:material:$material_version"
+        implementation "androidx.core:core-ktx:$core_version"
+        implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+        implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+        //ViewModel and LiveData
+        implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+        implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+        implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+        //Logging
+        implementation "com.github.ajalt:timberkt:$timberkt_version"
+
+        //Glide
+        implementation "com.github.bumptech.glide:glide:$glide_version"
+        kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+        //Koin
+        implementation "org.koin:koin-core:$koin_version"
+        implementation "org.koin:koin-android:$koin_version"
+        implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+        implementation "org.koin:koin-androidx-scope:$koin_version"
+
+        //Retrofit
+        implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+        implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+        implementation "com.squareup.okhttp3:logging-interceptor:$logging_version"
+        implementation 'org.apache.httpcomponents:httpclient:4.5.12'
+
+        //Tests
+        testImplementation "org.koin:koin-test:$koin_version"
+        testImplementation 'androidx.test:runner:1.2.0'
+        testImplementation 'androidx.test:rules:1.2.0'
+        androidTestImplementation "androidx.test.ext:junit:$junit_test_version"
+    }
+}

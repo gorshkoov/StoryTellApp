@@ -1,9 +1,7 @@
 package app.storytel.gorshkov.storytellapp
 
 import android.app.Application
-import app.storytel.gorshkov.storytellapp.di.appModule
-import app.storytel.gorshkov.storytellapp.di.detailsModule
-import app.storytel.gorshkov.storytellapp.di.scrollingModule
+import app.storytel.gorshkov.storytellapp.di.*
 import com.github.ajalt.timberkt.Timber
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -29,6 +27,8 @@ class StoryTellApp: Application() {
             androidContext(this@StoryTellApp)
             modules(
                 appModule,
+                retrofitModule,
+                servicesModule,
                 detailsModule,
                 scrollingModule
             )

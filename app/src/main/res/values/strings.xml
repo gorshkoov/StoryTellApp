@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">StoryTellApp</string>
+
+    <string name="network_error">Looks like you have an error related to network.\nTry to load the data again later</string>
+    <string name="load_again">Load again</string>
 </resources>

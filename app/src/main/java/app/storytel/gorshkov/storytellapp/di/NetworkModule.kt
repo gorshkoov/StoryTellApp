@@ -1,6 +1,6 @@
 package app.storytel.gorshkov.storytellapp.di
 
-import app.storytel.gorshkov.storytellapp.network.service.ScrollingService
+import app.storytel.gorshkov.storytellapp.network.service.PostsService
 import app.storytel.gorshkov.storytellapp.network.interceptor.LoggerInterceptorCreator
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
@@ -41,5 +41,5 @@ val retrofitModule = module {
 }
 
 val servicesModule = module {
-    single { (get() as Retrofit).create(ScrollingService::class.java) }
+    single { (get() as Retrofit).create(PostsService::class.java) }
 }

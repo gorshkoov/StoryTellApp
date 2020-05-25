@@ -8,8 +8,8 @@ import app.storytel.gorshkov.storytellapp.R
 import app.storytel.gorshkov.storytellapp.features.scrolling.items.ScrollingItem
 
 class ScrollingAdapter(
-    val items: List<ScrollingItem>,
-    val itemClickListener: (view: View) -> Unit
+    private val items: List<ScrollingItem>,
+    private val itemClickListener: (view: View) -> Unit
 ) : RecyclerView.Adapter<ScrollingViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScrollingViewHolder {
         val view =

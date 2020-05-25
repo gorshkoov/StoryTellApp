@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:foreground="?attr/selectableItemBackgroundBorderless"
     app:cardBackgroundColor="@color/white"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
     app:cardCornerRadius="@dimen/padding_2"
     app:cardUseCompatPadding="true">
 
@@ -14,39 +14,23 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/padding_16">
 
-        <ImageView
-            android:id="@+id/holder_image"
-            android:layout_width="@dimen/scrolling_image_size"
-            android:layout_height="@dimen/scrolling_image_size"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:background="#4000"
-            tools:ignore="ContentDescription" />
-
         <TextView
             android:id="@+id/holder_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/padding_8"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="@dimen/text_16"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@id/holder_description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/holder_image"
-            app:layout_constraintTop_toTopOf="@id/holder_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:text="Title" />
 
         <TextView
             android:id="@+id/holder_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/padding_8"
             android:textSize="@dimen/text_16"
-            app:layout_constraintBottom_toBottomOf="@id/holder_image"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/holder_image"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/holder_title"
             tools:text="Body" />
     </androidx.constraintlayout.widget.ConstraintLayout>

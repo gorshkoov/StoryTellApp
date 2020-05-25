@@ -9,3 +9,13 @@ When clicking one of the items in the list, the details of that item should be s
 Your solution should be something you would put into production. This means that we expect that the app is stable and performs well in all possible use cases
 
 At the interview we expect you to walk us through the code and explain what you have done.
+
+## Used libraries
+- **Kotlin** as the main language of the app;
+- **Koin** as the dependency injection library;
+- **View model**, **Flow** and **Live data** for communication between views and data logic layer;
+- **Coroutines** for async operations;
+- **Constraint layout** for layout creation;
+- **TimberKt** for logging;
+- **Retrofit2** for network requests;
+- **Picasso** for image loading
